@@ -1,0 +1,160 @@
+body {
+  background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  color: #333;
+  margin: 0;
+  font-family: 'Prompt', sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  position: fixed; /* Ensure the header sticks to the top */
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.navbar .logo {
+  font-family: 'Marcellus', serif;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #ff6347;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-toggle .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #fff;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+
+.nav-list li {
+  margin-left: 15px;
+}
+
+.about, .portfolio, .skills, .social {
+  padding: 100px 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin-top: 60px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about h1 {
+  font-family: 'Marcellus', serif;
+  font-size: 2.5em;
+  margin: 20px 0;
+  color: #333;
+}
+
+.about p {
+  font-size: 1.2em;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.about .image img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.portfolio h2, .skills h2 {
+  font-family: 'Marcellus', serif;
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.projects, .skills-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project, .skill {
+  background-color: #fff;
+  margin: 15px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 150px;
+}
+
+.project:hover, .skill:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.project h3, .skill span {
+  margin: 15px 0 0;
+  font-family: 'Marcellus', serif;
+  color: #333;
+}
+
+.social-media {
+  margin: 20px 0;
+}
+
+.social-media .fa {
+  font-size: 2em;
+  margin: 0 10px;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #333;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+.social-media .fa:hover {
+  background-color: #ff6347;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  width: 100%;
+  position: relative; /* Ensure footer is relative to the content */
+  margin-top: auto; /* Push footer to the bottom */
+}
